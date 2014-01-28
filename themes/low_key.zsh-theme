@@ -18,4 +18,4 @@ vcs_status() {
 UC=%{$fg[white]%}       # user's color
 [ $UID -eq "0" ] && UC=%{$fg[red]%}   # root's color
 
-PROMPT='%{$reset_color%}%T ${UC}%n%{$fg[red]%}@%{$fg[white]%}%m %{$fg[blue]%}%3~$(vcs_status)%{$reset_color%}»%b '
+PROMPT='%{$reset_color%}%T ${UC}%n%{$fg[red]%}@%{$fg[white]%}%m %{$fg[blue]%}%3~$(vcs_status)%{$reset_color%}%#%b '
